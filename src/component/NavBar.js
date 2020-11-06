@@ -3,11 +3,19 @@ import styled, { css } from "styled-components";
 
 const NavBarUI = styled.div`
   width: 100%;
-  background-color: dodgerblue;
+  height: 50px;
+  background-color: #262626;
+  color: white;
+  font-weight: bolder;
+  font-size: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const NavBar = () => {
-  return <NavBarUI>NavBar</NavBarUI>;
+  return <NavBarUI>React-Corona-Map</NavBarUI>;
 };
 
 export default NavBar;
