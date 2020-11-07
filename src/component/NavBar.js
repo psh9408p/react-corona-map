@@ -15,7 +15,7 @@ const NavBarUI = styled.div`
 `;
 
 const NavBar = () => {
-  return <NavBarUI>React-Corona-Map</NavBarUI>;
+  return <NavBarUI>React-Map</NavBarUI>;
 };
 
 export default NavBar;
