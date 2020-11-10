@@ -58,7 +58,6 @@ const InfoBox = () => {
               const InfoMarker = new kakao.maps.Marker({
                 map,
                 position: latlng,
-                // title: el.title,
               });
               InfoMarker.setMap(map);
             });
