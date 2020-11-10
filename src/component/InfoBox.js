@@ -32,6 +32,20 @@ const MyPosition = styled.div`
   font-weight: bolder;
 `;
 
+const Searching = styled.div`
+  position: absolute;
+  top: 100px;
+  left: 140px;
+  z-index: 10000;
+  background: white;
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  text-align: center;
+`;
+
+// let ps = new kakao.maps.services.Places();
+
 const InfoBox = () => {
   return (
     <>
@@ -68,6 +82,16 @@ const InfoBox = () => {
       >
         현재위치
       </MyPosition>
+      <Searching>
+        <input
+          placeholder="목적지를 입력해주세요"
+          style={{ border: "none", outline: "none" }}
+          onClick={(e) => {
+            console.log(e.target.value);
+          }}
+        />
+        <button>검색</button>
+      </Searching>
     </>
   );
 };
